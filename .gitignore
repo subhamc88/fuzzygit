@@ -1,0 +1,26 @@
+# Go binaries
+/bin
+/bin/*
+
+# Build artifacts
+/build
+/dist
+/coverage.out
+/*.exe
+/*.test
+
+# Dependency directories
+/vendor/
+*.sum
+
+# IDE and editor files
+*.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.tmp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
