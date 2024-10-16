@@ -1,0 +1,52 @@
+name: 🐛 Bug Report
+description: Report a bug in fuzzygit.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug! Please fill out the following information to help us assist you.
+  - type: input
+    id: contact
+    attributes:
+      label: 📧 Contact Details
+      description: How can we reach you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 🚨 What happened?
+      description: Please describe the issue, including steps to reproduce.
+      placeholder: Tell us what you see!
+      value: "A bug occurred!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: 📦 Version
+      description: Which version of fuzzygit are you using?
+      options:
+        - 1.0.0
+        - 1.1.0
+        - 1.2.0 (latest)
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📝 Relevant Logs
+      description: Please paste any relevant log output here.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: ✅ Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
