@@ -1,0 +1,25 @@
+name: 📚 Documentation Update
+description: Request a documentation update or correction.
+title: "[Docs]: "
+labels: ["documentation", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve our documentation! Please fill out the form below.
+  - type: input
+    id: page-url
+    attributes:
+      label: 📍 Page URL
+      description: Which page needs updating?
+      placeholder: ex. https://fuzzygit.com/docs/getting-started
+    validations:
+      required: true
+  - type: textarea
+    id: update-description
+    attributes:
+      label: ✍️ Update Description
+      description: What needs to be changed or added?
+      placeholder: Describe the required changes...
+    validations:
+      required: true
